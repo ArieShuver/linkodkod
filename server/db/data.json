@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "img": "./img.png",
+        "content": "cdscdsccsgrsdfjdngkjfdsngksndgksfdngjknfdsgjbngfdklbgngfdkg",
+        "name": "arie",
+        "time": 2024,
+        "like": 0 
+    },
+    {
+        "id": 2,
+        "img": "./logo.png",
+        "content": "fsdfdsfdsfvfdsvfd",
+        "name": "arie",
+        "time": 2025,
+        "like": 0
+    }
+]

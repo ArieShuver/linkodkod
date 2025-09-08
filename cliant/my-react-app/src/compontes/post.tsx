@@ -8,11 +8,9 @@ export type Post = {
     time: number,
     like: number
 }
-export default function PostOn({ post }: any) {
-    console.log(post.id, post)
+export default function PostOne({ post }: { post: Post }) {
     return (
         <div className="card">
-            {/* <h1>{post.id}</h1> */}
             <img src={post.img} alt="img" />
             <p>{post.content}</p>
             <section>
