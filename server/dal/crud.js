@@ -9,7 +9,7 @@ async function read(path) {
             return [];
         }
         else {
-            console.log(readJson);    
+            console.log(readJson);
             return readJson;
         }
     }
@@ -22,8 +22,8 @@ async function read(path) {
 //Added 
 async function create(path, data) {
     let listPosts = await read(path);
-    console.log('data',{data});
-    
+    console.log('data', { data });
+
     listPosts.push(data);
     listPosts = JSON.stringify(listPosts);
     try {
@@ -74,11 +74,30 @@ async function deleteone(id, path) {
     }
 }
 
+
+async function readOn(id, path) {
+    try {
+        const listPost = await read(path)
+        const post = listPost.filter(post => post.id === id)
+        if (post) {
+            return post
+        }
+        else {
+            return "post not found"
+        }
+    }
+    catch (error) {
+        return error
+    }
+}
+
 export {
     read,
     create,
     update,
-    deleteone
+    deleteone,
+    readOn
 }
+
 
 

@@ -20,9 +20,9 @@
     width: 10%;
 }
 
-/* .buttnHome {
+.buttnHome {
     width: 100%;
-    height: 100%; */
-/* } */
+    height: 100%; 
+}
 
 .buttnHome :hover {}

@@ -1,5 +1,5 @@
-import Logo from "./layout/Logo"
-import Slogan from "./layout/Slogan"
+import Logo from "../layout/Logo"
+import Slogan from "../layout/Slogan"
 import "./haeder.css"
 import { Link } from "react-router"
 export default function Header() {
@@ -8,6 +8,7 @@ export default function Header() {
             <Slogan></Slogan>
             <Logo></Logo>
             <Link to={"/"}> <button><img src="house.png" alt="" className="buttnHome" /></button></Link>
+            <Link to={"/posyById"}> <button>🔍</button></Link>
         </div>
     )
 }

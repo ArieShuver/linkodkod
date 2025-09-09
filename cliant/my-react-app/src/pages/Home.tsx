@@ -1,11 +1,11 @@
-import Haeder from "../compontes/Header"
+import Header from "../compontes/header/Header"
 import "./home.css"
-import Content from "../compontes/layout/Content"
+import Content from "../compontes/content/Content"
 export default function Home() {
  
   return (
     <div className="home">
-        <Haeder></Haeder>
+        <Header></Header>
         <Content></Content>
     </div >
   )
