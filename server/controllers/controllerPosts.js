@@ -1,14 +1,13 @@
 import { read, readOn, create } from "../dal/crud.js";
 import PostImg from "../utils/PostImg.js";
+import parameterCheck from "../utils/ParameterCheck.js";
 
 
 const path = "./db/data.json"
 export async function getAll(req, res) {
     try {
-        // console.log('get all  controller');
         const allPosts = await read(path);
         console.log(allPosts);
-
         res.send(allPosts);
     } catch (error) {
         console.error('Error getting all:', error);
@@ -34,7 +33,7 @@ export async function addingPost(req, res) {
         console.log('add controller');
         const data = req.body;
         const post = PostImg(data)
-        if (post) {
+        if (parameterCheck(post)) {
             await create(path, post)
             res.status(201).send({ message: "added post" });
         }

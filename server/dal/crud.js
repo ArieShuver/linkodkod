@@ -1,4 +1,5 @@
 import fs from "fs/promises";
+import { use } from "react";
 
 // Reading 
 async function read(path) {
@@ -9,7 +10,7 @@ async function read(path) {
             return [];
         }
         else {
-            console.log(readJson);
+            // console.log(readJson);
             return readJson;
         }
     }
@@ -52,14 +53,16 @@ async function readOn(id, path) {
 }
 
 async function getByName(path, name) {
-    console.log(name);
+    console.log(name, "in get by name");
     try {
-        const { data, error } = await read(path)
-        if (error) {
-            console.error("Error fetching player by ID:", error.message);
-            return null;
-        }
-        user = data.filter(user => user.name === name)
+        const data = await read(path)
+        // if (error) {
+        //     console.error("Error fetching player by ID:", error.message);
+        //     return null;
+        // }
+        console.log(data);
+
+        const user = data.filter(user => user.name === name)
         return data.length > 0 ? data : null;
     } catch (error) {
         console.log('error fetching name :', error.message);

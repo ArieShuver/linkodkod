@@ -5,6 +5,5 @@ const router = Router();
 router.post("/addUsers", addUsers)
 router.post("/chacUser",chakUser)
 
-// router.post("/getUserByName", getUserName);
 
 export default router;

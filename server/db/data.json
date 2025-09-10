@@ -1,1 +1,58 @@
-[{"id":1,"img":"http://localhost:3000/1.png","content":"cdscdsccsgrsdfjdngkjfdsngksndgksfdngjknfdsgjbngfdklbgngfdkg","name":"arie","time":"2025-09-10T08:47:51.543Z","like":0},{"id":2,"img":"http://localhost:3000/2.png","content":"fsdfdsfdsfdsaaklmfkl;mkmkdfkvkm dsv dssddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd   ddddddddddddddddddddddddddddddddddddddddddddddddfdsv dsfvsddsvsdfsvsbsfbsfblk dv   dksvmlkdsmvlsdmvldmvk dvsvfdsvfd","name":"arie","time":2025,"like":0},{"id":51,"img":"http://localhost:3000/3.png","content":"","name":"","time":"2025-09-10T08:47:51.543Z","like":0},{"id":51,"img":"http://localhost:3000/4.png","content":"","name":"","time":"2025-09-10T08:47:51.543Z","like":0},{"id":51,"img":"http://localhost:3000/5.png","content":"חלמךשדלגצדשךףג","name":"נסים","time":"2025-09-10T08:47:51.543Z","like":0},{"img":"dwsd","content":"dwqdqdw","name":"aswda","id":23,"time":10,"like":0},{"img":"http://localhost:3000/1.png","content":"dwasdwsa","name":"שלמה","id":32,"time":10,"like":0}]
+[
+    {
+        "id": 1,
+        "img": "http://localhost:3000/1.png",
+        "content": "עץ הוא שם כללי לצמחים רב-שנתיים גבוהים, אשר בסיסם עשוי גזע מרכזי ניכר, ממנו לרוב צומחים ענפים מכוסי עלים, ולעיתים אף פרחים ופירות ובמקרים מסוימים מכנים שיחים גם כעצים. עצים אינם קבוצה טקסונומית מובהקת, אם כי כולם שייכים לקבוצה צמחי זרע.קיבוץ רב של עצים יכול להפוך ליער או לסבך וכשהם מגודלים בידי האדם לפרדס, מטע ועוד. עצים שונים המגודלים במיוחד למאכל הם ברובם עצי פרי. לעומתם עצים יכולים להיכרת, הן למטרות חקלאיות והן להפקת העץ מהם.",
+        "name": "arie",
+        "time": "2025-09-10T08:47:51.543Z",
+        "like": 0
+    },
+    {
+        "id": 2,
+        "img": "http://localhost:3000/2.png",
+        "content": "fsdfdsfdsfdsaaklmfkl;mkmkdfkvkm dsv dssddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd   ddddddddddddddddddddddddddddddddddddddddddddddddfdsv dsfvsddsvsdfsvsbsfbsfblk dv   dksvmlkdsmvlsdmvldmvk dvsvfdsvfd",
+        "name": "arie",
+        "time": 2025,
+        "like": 0
+    },
+    {
+        "id": 51,
+        "img": "http://localhost:3000/3.png",
+        "content": "",
+        "name": "",
+        "time": "2025-09-10T08:47:51.543Z",
+        "like": 0
+    },
+    {
+        "id": 51,
+        "img": "http://localhost:3000/4.png",
+        "content": "",
+        "name": "",
+        "time": "2025-09-10T08:47:51.543Z",
+        "like": 0
+    },
+    {
+        "id": 51,
+        "img": "http://localhost:3000/5.png",
+        "content": "חלמךשדלגצדשךףג",
+        "name": "נסים",
+        "time": "2025-09-10T08:47:51.543Z",
+        "like": 0
+    },
+    {
+        "img": "http://localhost:3000/1.png",
+        "content": "dwasdwsa",
+        "name": "שלמה",
+        "id": 32,
+        "time": 10,
+        "like": 0
+    },
+    {
+        "img": "http://localhost:3000/1.png",
+        "content": "עץ הוא שם כללי לצמחים רב-שנתיים גבוהים, אשר בסיסם עשוי גזע מרכזי ניכר, ממנו לרוב צומחים ענפים מכוסי עלים, ולעיתים אף פרחים ופירות ובמקרים מסוימים מכנים שיחים גם כעצים. עצים אינם קבוצה טקסונומית מובהקת, אם כי כולם שייכים לקבוצה צמחי זרע.  קיבוץ רב של עצים יכול להפוך ליער או לסבך וכשהם מגודלים בידי האדם לפרדס, מטע ועוד. עצים שונים המגודלים במיוחד למאכל הם ברובם עצי פרי. לעומתם עצים יכולים להיכרת, הן למטרות חקלאיות והן להפקת העץ מהם.",
+        "name": "אריה",
+        "id": 15,
+        "time": 10,
+        "like": 0
+    }
+]

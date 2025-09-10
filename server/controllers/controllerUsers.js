@@ -1,9 +1,8 @@
 import { create, getByName } from "../dal/crud.js";
-// import bcrypt from 'bcrypt';
-// import jwt from "jsonwebtoken";
-// import { config } from "dotenv";
+import jwt from "jsonwebtoken";
+import { config } from "dotenv";
 
-// config();
+config();
 const path = "./db/users.json"
 async function getAllUsers(req, res) {
     try {
@@ -38,39 +37,28 @@ async function getUserName(req, res) {
         res.status(404).send({ message: "User not found" });
     }
 }
-
+// בדיקה האם הסיסמא נכונה
 export async function chakUser(req, res) {
-    console.log('req in chakuser', req.body);
     try {
-        const password = req.body.password;
-        const user = await getByName(req.body.name);
-        console.log('passeord', password);
-        console.log('user', user);
+        const { password, name } = req.body;
+        const user = await getByName(path, name);
         if (!user) {
             return res.status(404).json({ error: "User not found" });
         }
-        const isMatch = await bcrypt.compare(password, user.password);
-        console.log('isMatch', isMatch);
-        if (isMatch) {
-            const token = await tukanCreator(user);
-            console.log('token in chaek ', token);
-            try {
-                res.status(200).json({ message: "Login successful", token: token });
-            } catch (error) {
-                console.error('res send:', error.message);
-                res.status(500).json({ error: "Failed to send token" });
-            }
-        } else {
-            res.status(401).json({ error: "Invalid credentials" });
+        else if (user.password === password) {
+            return res.status(200).send("Authorized user")
         }
-    } catch (error) {
+        else {
+            return res.status(403).send("Unauthorized user")
+        }
+    }
+    catch (error) {
         res.status(500).json({ error: "Internal Server Error" });
         console.log('error ', error.message);
     }
 }
 
-
-
+// יצירת טוקן
 export async function tukanCreator(user) {
     try {
         const token = jwt.sign({ name: user.name }, process.env.JWT_SECRET, { expiresIn: '1h' })
