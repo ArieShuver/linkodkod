@@ -1,10 +1,10 @@
-import React from 'react'
-import type { Post } from '../post/post'
-import "./componSingel.css"
+import "./SingelPost.css"
+import type { Post } from "../post/post"
 
-export default function ComponSingl({ post }: { post: any }) {
+export default function ShwoPost({ post }: { post: Post }) {
+    console.log("555555555555", post.content)
     return (
-        <div className='post'>
+        <div className="post">
             <img src={post.img} alt="img" />
             <p>{post.content}</p>
             <section>
@@ -16,4 +16,3 @@ export default function ComponSingl({ post }: { post: any }) {
 
     )
 }
-

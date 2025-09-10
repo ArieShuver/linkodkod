@@ -1,0 +1,29 @@
+.add {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 70%;
+    border: 1px solid black;
+    border-radius: 7%;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 2, 0, 1.2), 0 6px 20px 0 rgba(144, 36, 36, 0.19);
+
+}
+
+.add input {
+    width: 40%;
+    justify-self: center;
+    height: 3%;
+}
+
+.add button {
+    border: 1px solid black;
+    margin-top: 15%;
+}
+
+#content {
+    height: 20%;
+    text-align: -webkit-center;
+
+}
+

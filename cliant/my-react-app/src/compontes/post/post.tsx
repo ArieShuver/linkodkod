@@ -11,8 +11,7 @@ export type Post = {
 }
 export default function PostOne({ post }: { post: Post }) {
     return (
-        <div className="card" onClick={() => {
-        }}>
+        <div className="card">
             <img src={post.img} alt="img" />
             <p>{post.content}</p>
             <section>

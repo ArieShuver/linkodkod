@@ -1,10 +1,10 @@
 import React from 'react'
-import type { Post } from '../compontes/post/post'
-import SingelPost from './SingelPost'
-
+import SingelPost from '../compontes/postById/SingelPost'
+import Header from '../compontes/header/Header'
 export default function PostById() {
     return (
-        <div>
+        <div className='home'>
+            <Header></Header>
             <SingelPost>
             </SingelPost>
         </div>

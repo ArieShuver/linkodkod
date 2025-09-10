@@ -5,3 +5,6 @@
     justify-items: center;
     justify-items: center;
 }
+.content a{
+    text-align: -webkit-center;
+}

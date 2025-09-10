@@ -45,9 +45,14 @@ export default function Content() {
     return (
         <div className="content">
             {posts.map((item: Post) => (
-                    <PostOne key={item.id} post={item}></PostOne>
-            ))}
-        </div>
+                <>
+                    <Link key={item.id} to={`PostById/${item.id}`}>
+                        <PostOne post={item} />
+                    </Link >
+                </>
+            ))
+            }
+        </div >
     )
 }
 

@@ -23,7 +23,6 @@ async function read(path) {
 async function create(path, data) {
     let listPosts = await read(path);
     console.log('data', { data });
-
     listPosts.push(data);
     listPosts = JSON.stringify(listPosts);
     try {
@@ -35,45 +34,6 @@ async function create(path, data) {
         return error;
     }
 }
-
-//change 
-async function update(id, newPost, path) {
-    let listPosts = await read(path);
-    const indexPost = listPosts.findIndex(post => post.id === id);
-    if (indexPost != -1) {
-        listPosts[indexPost] = newPost;
-    }
-    else {
-        return console.log('The post is not found');
-    }
-    try {
-        listPosts = JSON.stringify(listPosts, null, 2)
-        await fs.writeFile(path, listPosts);
-    }
-    catch (error) {
-        console.log(error);
-    }
-}
-
-//delete 
-async function deleteone(id, path) {
-    let listPosts = await read(path);
-    const indexPost = listPosts.findIndex(post => post.id === post);
-    if (indexPost != -1) {
-        listPosts = listPosts.filter(post => post.id !== id)
-    }
-    else {
-        return console.log('The is not found');
-    }
-    try {
-        listPosts = JSON.stringify(listPosts, null, 2)
-        await fs.writeFile(path, listPosts);
-    }
-    catch (error) {
-        console.log(error);
-    }
-}
-
 
 async function readOn(id, path) {
     try {
@@ -91,13 +51,27 @@ async function readOn(id, path) {
     }
 }
 
-export {
-    read,
-    create,
-    update,
-    deleteone,
-    readOn
+async function getByName(path, name) {
+    console.log(name);
+    try {
+        const { data, error } = await read(path)
+        if (error) {
+            console.error("Error fetching player by ID:", error.message);
+            return null;
+        }
+        user = data.filter(user => user.name === name)
+        return data.length > 0 ? data : null;
+    } catch (error) {
+        console.log('error fetching name :', error.message);
+        return null;
+    }
 }
 
 
+export {
+    read,
+    create,
+    readOn,
+    getByName
+}
 

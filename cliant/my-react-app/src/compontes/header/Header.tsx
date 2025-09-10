@@ -7,8 +7,8 @@ export default function Header() {
         <div className="header">
             <Slogan></Slogan>
             <Logo></Logo>
-            <Link to={"/"}> <button><img src="house.png" alt="" className="buttnHome" /></button></Link>
-            <Link to={"/posyById"}> <button>🔍</button></Link>
+            <Link to={"/"}> <button><img src="/house.png" alt="" className="buttnHome" /></button></Link>
+            <Link className="buttnadd" to={"/adding"}> <button>Add Post</button></Link>
         </div>
     )
 }

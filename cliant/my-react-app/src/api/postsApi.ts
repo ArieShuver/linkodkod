@@ -12,7 +12,7 @@ export async function AllPosts() {
 }
 
 
-export async function onPost(id: number) {
+export async function onePost(id: number) {
     try {
         const response = await fetch("http://localhost:3000/posts/onpost", {
             method: "POST",
@@ -31,7 +31,7 @@ export async function onPost(id: number) {
     }
 }
 
-export async function addPost(post: {}) {
+export async function addPost(post: any) {
     try {
         const response = await fetch("http://localhost:3000/posts/addpost", {
             method: "POST",
@@ -39,7 +39,7 @@ export async function addPost(post: {}) {
                 "Content-Type": "application/json",
                 // "Authorization": `Bearer ${global.token}`,
             },
-            body: JSON.stringify({ post }),
+            body: JSON.stringify( post ),
         });
         const data = await response.json();
         console.log('data', data);

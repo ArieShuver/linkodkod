@@ -25,4 +25,12 @@
     height: 100%; 
 }
 
-.buttnHome :hover {}
+.buttnadd{
+    color: wheat;
+    height: 100%;
+    font-size:large
+}
+
+.header button :hover{
+      transform: scale(1.5); 
+}
