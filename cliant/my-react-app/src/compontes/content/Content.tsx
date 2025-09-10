@@ -46,8 +46,8 @@ export default function Content() {
         <div className="content">
             {posts.map((item: Post) => (
                 <>
-                    <Link key={item.id} to={`PostById/${item.id}`}>
-                        <PostOne post={item} />
+                    <Link to={`PostById/${item.id}`}>
+                        <PostOne post={item} key={item.id} />
                     </Link >
                 </>
             ))

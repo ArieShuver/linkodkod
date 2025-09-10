@@ -37,7 +37,7 @@ export default function Adding() {
       <input id='img' type="text" onChange={(e) => setImg(e.target.value)} />
 
       <label htmlFor="content">content</label>
-      <input id='content' type="textarea" onChange={(e) => setContent(e.target.value)} />
+      <textarea id='content' onChange={(e) => setContent(e.target.value)} />
 
       <label htmlFor="img">name</label>
       <input id="name" type="text" onChange={(e) => setName(e.target.value)} />

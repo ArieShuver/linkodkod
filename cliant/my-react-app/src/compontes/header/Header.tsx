@@ -7,8 +7,10 @@ export default function Header() {
         <div className="header">
             <Slogan></Slogan>
             <Logo></Logo>
-            <Link to={"/"}> <button><img src="/house.png" alt="" className="buttnHome" /></button></Link>
-            <Link className="buttnadd" to={"/adding"}> <button>Add Post</button></Link>
+            <section>
+                <Link to={"/"}> <button><img src="/house.png" alt="" className="buttnHome" /></button></Link>
+                <Link to={"/adding"}> <button><img src="/add.svg" alt="" className="buttnadd" /></button></Link>
+            </section>
         </div>
     )
 }

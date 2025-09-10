@@ -10,6 +10,7 @@
     border-radius: 10%;
     align-items: center;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    color: rgb(40, 3, 3);
 
 }
 
@@ -30,18 +31,15 @@
     display: block;
     word-break: break-all;
     color: rgb(16, 131, 131);
-    font-family: initial;  
+    font-family: initial;
     scrollbar-width: none;
 }
+
 @media (max-width: 600px) {
     .card {
         width: 90%;
         /* height: 70%; */
         height: auto;
         margin-top: 5%;
-    }
-
-    .home{
-
     }
 }

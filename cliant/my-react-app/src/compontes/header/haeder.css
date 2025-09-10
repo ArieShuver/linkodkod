@@ -34,3 +34,12 @@
 .header button :hover{
       transform: scale(1.5); 
 }
+
+@media (max-width: 600px) {
+    .header button {
+        width: 48%;
+        /* height: 70%; */
+        height: auto;
+        margin-top: 5%;
+    }
+}
