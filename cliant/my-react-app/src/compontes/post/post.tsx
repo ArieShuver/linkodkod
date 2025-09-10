@@ -1,4 +1,5 @@
 import "./post.css"
+// import { useNavigate } from "react-router"
 
 export type Post = {
     id: number,
@@ -17,8 +18,8 @@ export default function PostOne({ post }: { post: Post }) {
                 <div> Advertiser name - {post.name}</div>
                 <time>Publication time - {post.time}</time>
                 <div>{post.like}👍</div>
-            </section>
-        </div>
+            </section >
+        </div >
 
     )
 }

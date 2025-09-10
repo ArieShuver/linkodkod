@@ -1,4 +1,4 @@
-export default function errors(posts: any) {
+export default function EmptyCheck(posts: any) {
     if (!posts) {
         return (
             <h1>שגיאה 503 נסה מאוחר יותר</h1>

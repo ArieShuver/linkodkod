@@ -9,7 +9,7 @@ async function read(path) {
             return [];
         }
         else {
-            console.log(readJson);    
+            console.log(readJson);
             return readJson;
         }
     }
@@ -22,8 +22,7 @@ async function read(path) {
 //Added 
 async function create(path, data) {
     let listPosts = await read(path);
-    console.log('data',{data});
-    
+    console.log('data', { data });
     listPosts.push(data);
     listPosts = JSON.stringify(listPosts);
     try {
@@ -36,49 +35,43 @@ async function create(path, data) {
     }
 }
 
-//change 
-async function update(id, newPost, path) {
-    let listPosts = await read(path);
-    const indexPost = listPosts.findIndex(post => post.id === id);
-    if (indexPost != -1) {
-        listPosts[indexPost] = newPost;
-    }
-    else {
-        return console.log('The post is not found');
-    }
+async function readOn(id, path) {
     try {
-        listPosts = JSON.stringify(listPosts, null, 2)
-        await fs.writeFile(path, listPosts);
+        const listPost = await read(path)
+        const post = listPost.filter(post => post.id === id)
+        if (post) {
+            return post
+        }
+        else {
+            return "post not found"
+        }
     }
     catch (error) {
-        console.log(error);
+        return error
     }
 }
 
-//delete 
-async function deleteone(id, path) {
-    let listPosts = await read(path);
-    const indexPost = listPosts.findIndex(post => post.id === post);
-    if (indexPost != -1) {
-        listPosts = listPosts.filter(post => post.id !== id)
-    }
-    else {
-        return console.log('The is not found');
-    }
+async function getByName(path, name) {
+    console.log(name);
     try {
-        listPosts = JSON.stringify(listPosts, null, 2)
-        await fs.writeFile(path, listPosts);
-    }
-    catch (error) {
-        console.log(error);
+        const { data, error } = await read(path)
+        if (error) {
+            console.error("Error fetching player by ID:", error.message);
+            return null;
+        }
+        user = data.filter(user => user.name === name)
+        return data.length > 0 ? data : null;
+    } catch (error) {
+        console.log('error fetching name :', error.message);
+        return null;
     }
 }
+
 
 export {
     read,
     create,
-    update,
-    deleteone
+    readOn,
+    getByName
 }
-
 

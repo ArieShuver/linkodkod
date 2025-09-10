@@ -1,18 +1,1 @@
-[
-    {
-        "id": 1,
-        "img": "./img.png",
-        "content": "cdscdsccsgrsdfjdngkjfdsngksndgksfdngjknfdsgjbngfdklbgngfdkg",
-        "name": "arie",
-        "time": 2024,
-        "like": 0 
-    },
-    {
-        "id": 2,
-        "img": "./logo.png",
-        "content": "fsdfdsfdsfvfdsvfd",
-        "name": "arie",
-        "time": 2025,
-        "like": 0
-    }
-]
+[{"id":1,"img":"http://localhost:3000/1.png","content":"cdscdsccsgrsdfjdngkjfdsngksndgksfdngjknfdsgjbngfdklbgngfdkg","name":"arie","time":"2025-09-10T08:47:51.543Z","like":0},{"id":2,"img":"http://localhost:3000/2.png","content":"fsdfdsfdsfdsaaklmfkl;mkmkdfkvkm dsv dssddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd   ddddddddddddddddddddddddddddddddddddddddddddddddfdsv dsfvsddsvsdfsvsbsfbsfblk dv   dksvmlkdsmvlsdmvldmvk dvsvfdsvfd","name":"arie","time":2025,"like":0},{"id":51,"img":"http://localhost:3000/3.png","content":"","name":"","time":"2025-09-10T08:47:51.543Z","like":0},{"id":51,"img":"http://localhost:3000/4.png","content":"","name":"","time":"2025-09-10T08:47:51.543Z","like":0},{"id":51,"img":"http://localhost:3000/5.png","content":"חלמךשדלגצדשךףג","name":"נסים","time":"2025-09-10T08:47:51.543Z","like":0},{"img":"dwsd","content":"dwqdqdw","name":"aswda","id":23,"time":10,"like":0},{"img":"http://localhost:3000/1.png","content":"dwasdwsa","name":"שלמה","id":32,"time":10,"like":0}]
